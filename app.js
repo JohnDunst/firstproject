@@ -63,9 +63,6 @@ function cpuChoices (){
 
 
 
-    
-// TIES
-
 //reload button
 
 //Display round count
