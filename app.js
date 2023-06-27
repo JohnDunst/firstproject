@@ -40,14 +40,14 @@ function cpuChoices (){
             }else if (cpuChoice==scissors);
             console.log('cpu win');
             cpuScore ++;
-        
+    }
 
-    if (userChoice===scissors);
-            if(cpuChoice===paper)
+    if (userChoice===scissors);{
+            if(cpuChoice===paper){
             console.log('you win');
-            else if (cpuChoice==rock);
+            }else if (cpuChoice==rock);
             console.log('cpu win');
-        }
+    }
     
     
     
@@ -55,14 +55,6 @@ function cpuChoices (){
     
     
     
-
-
-
-
-
-
-
-
 
 
 
