@@ -45,8 +45,10 @@ function cpuChoices (){
     if (userChoice===scissors);{
             if(cpuChoice===paper){
             console.log('you win');
+            userScore ++;
             }else if (cpuChoice==rock);
             console.log('cpu win');
+            cpuScore ++;
     }
     
     
