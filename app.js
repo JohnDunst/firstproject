@@ -23,29 +23,29 @@ function cpuChoices (){
 //logic of the game similar to my mini project code logic
     if (userChoice===cpuChoice){
             console.log("tie");
-    }else if (userChoice===rock);{
-            if(cpuChoice===scissors){
+    }else if (userChoice==='rock');{
+            if(cpuChoice==='scissors'){
             console.log("you win");
             userScore ++;
-            }else if (cpuChoice===paper);
+            }else if (cpuChoice==='paper');
             console.log("cpu win");
             cpuScore++;
         }
      
-    if (userChoice===paper);{
-            if(cpuChoice===rock){
+    if (userChoice==='paper');{
+            if(cpuChoice==='rock'){
             console.log("you win");
             userScore ++;
-            }else if (cpuChoice==scissors);
+            }else if (cpuChoice=='scissors');
             console.log("cpu win");
             cpuScore ++;
     }
 
-    if (userChoice===scissors);{
-            if(cpuChoice===paper){
+    if (userChoice==='scissors');{
+            if(cpuChoice==='paper'){
             console.log("you win");
             userScore ++;
-            }else if (cpuChoice==rock);
+            }else if (cpuChoice=='rock');
             console.log("cpu win");
             cpuScore ++;
     }
