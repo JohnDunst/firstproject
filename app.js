@@ -10,7 +10,6 @@ const paperBtn = document.querySelector ('paper');
 const sicssorsBtn = document.querySelector ('scissors');
 const choiceList = ("rock", "paper", "scissors");
 
-
 function cpuChoices (){
     cpuChoice= choiceList [Math.floor(Math.random()*3)];
     return cpuChoice;
@@ -21,7 +20,8 @@ function cpuChoices (){
     
 
 //logic of the game similar to my mini project code logic
-    if (userChoice===cpuChoice){
+const winner= (userChoice,cpuChoice)=>{   
+if (userChoice===cpuChoice){
             console.log("tie");
     }else if (userChoice==='rock');{
             if(cpuChoice==='scissors'){
@@ -49,7 +49,7 @@ function cpuChoices (){
             console.log("cpu win");
             cpuScore ++;
     }
-    
+}
     
     
     
