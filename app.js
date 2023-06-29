@@ -8,10 +8,11 @@ let userChoice="";
 const rockBtn = document.querySelector ('.rock');
 const paperBtn = document.querySelector ('.paper');
 const sicssorsBtn = document.querySelector ('.scissors');
-const choiceList = ("rock", "paper", "scissors");
+const choiceList = ["rock", "paper", "scissors"];
 rockBtn.addEventListener("click",(evt)=> {
     console.log("rockBtn");
-
+    cpuChoices()
+    console.log(cpuChoice);
 })
 paperBtn.addEventListener("click",(evt)=> {
     console.log("paperBtn");
@@ -24,7 +25,8 @@ sicssorsBtn.addEventListener("click",(evt)=> {
 
 
 function cpuChoices (){
-    cpuChoice= choiceList [Math.floor(Math.random()*3)];
+let random=(Math.floor(Math.random()*3));
+    cpuChoice= choiceList[random];
     return cpuChoice;
 }
 
