@@ -16,8 +16,7 @@ function cpuChoices (){
 }
 
 
-
-    
+   
 
 //logic of the game similar to my mini project code logic
 const winner= (userChoice,cpuChoice)=>{   
