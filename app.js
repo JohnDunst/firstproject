@@ -5,10 +5,23 @@ let cpuChoice="";
 let userChoice="";
 //start function IE: player click on selection button
 
-const rockBtn = document.querySelector ('rock');
-const paperBtn = document.querySelector ('paper');
-const sicssorsBtn = document.querySelector ('scissors');
+const rockBtn = document.querySelector ('.rock');
+const paperBtn = document.querySelector ('.paper');
+const sicssorsBtn = document.querySelector ('.scissors');
 const choiceList = ("rock", "paper", "scissors");
+rockBtn.addEventListener("click",(evt)=> {
+    console.log("rockBtn");
+
+})
+paperBtn.addEventListener("click",(evt)=> {
+    console.log("paperBtn");
+
+})
+sicssorsBtn.addEventListener("click",(evt)=> {
+    console.log("sicssorsBtn");
+
+})
+
 
 function cpuChoices (){
     cpuChoice= choiceList [Math.floor(Math.random()*3)];
