@@ -1,2 +1,6 @@
 /* Going to have CPU holder on top and player selection below If i have time semi circle them around CPU
-
+*/
+.winner{
+    border: solid gray;
+    height: 100px;
+}
