@@ -34,7 +34,7 @@ paperBtn.addEventListener("click", (evt) => {
   var result = winner("paper",choice);
 });
 sicssorsBtn.addEventListener("click", (evt) => {
-  console.log("sicssorsBtn");
+  console.log("sicssors");
 let choice = cpuChoices();
 console.log(choice);
 var result = winner("scissors",choice);
