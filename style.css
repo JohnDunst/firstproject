@@ -1,6 +1,20 @@
 /* Going to have CPU holder on top and player selection below If i have time semi circle them around CPU
 */
-.winner{
+.gameWinner{
     border: solid gray;
     height: 100px;
+    font-size: larger;
+    color: blue;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+
+}
+.scores{
+    display: flex;
+    justify-content: space-evenly;
 }

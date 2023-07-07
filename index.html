@@ -4,56 +4,56 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Rock Paper Scissors</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-<!--intro header-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock Paper Scissors</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--intro header-->
 
+    <!--game board-->
+    <!--Start game Button Will become reload after start-->
+    <div class="gameWinner">
+    <h1 class="resultText">Result</h1>
+  </div>
+    <!--CPU gif-->
+    <div class="cpuContainer">
+      <img
+        class="cpuDisplay"
+        src="https://img.itch.zone/aW1nLzY3MjIwNzguZ2lm/original/3kwXny.gif"
+      />
+    </div>
 
-<!--game board-->
-            <!--Start game Button Will become reload after start-->
+    <!--Rock Paper Scissor buttons    ****Can i make img a button?*****-->
+    <div class="options">
+      <button class="rock">Rock</button>
+      <button class="paper">Paper</button>
+      <button class="scissors">Scissors</button>
+    </div>
 
-            <!--CPU gif-->
-<div class = "cpuContainer">
-    <img class="cpuDisplay" src="https://img.itch.zone/aW1nLzY3MjIwNzguZ2lm/original/3kwXny.gif">
+    <!--Results & counter-->
+    <!--player & CPUscore-->
+    <div class="scores">
+      <div class="win"></div>
 
-
-</div>
-
-            <!--Rock Paper Scissor buttons    ****Can i make img a button?*****-->
-<div class="options">
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissors">Scissors</button>
-
-
-</div>
-
-            <!--Results & counter-->  <!--player & CPUscore-->
-<div class="scores">
-    <div class="winner"></div>
-
-    <div class="userScore">
+      <div class="userScore">
         <h3>User</h3>
-     <span>   <p>0</p> </span>
-</div>
-    <div class="cpuScore">
+        <span> <p>0</p> </span>
+      </div>
+      <div class="cpuScore">
         <h3>Computer</h3>
-    <span>  <p>0</p> </span>
+        <span> <p>0</p> </span>
+      </div>
 </div>
-<div class="resetButton">
+      <div class="resetButton">
+        <button class="reset">Reset</button>
+      </div>
+    </div>
 
-<button class="reset">Reset</button>
-</div>
-
-</div>
-
-        <script src="app.js" async defer></script>
-    </body>
+    <script src="app.js" async defer></script>
+  </body>
 </html>
