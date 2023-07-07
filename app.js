@@ -12,6 +12,7 @@ userChoice = (rockBtn, paperBtn, sicssorsBtn);
 const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
 const cpuSelection = document.querySelector(".cpuSelection");
+const userWinner= document.querySelector(".chickenDinner");
 
 
 function cpuChoices() {
@@ -139,6 +140,15 @@ const updateScores = () => {
   const cpuScore = document.querySelector(".cpuScore p");
   userScore.textContent = uScore;
   cpuScore.textContent = cScore;
+  if (uScore >= 5) 
+    {
+      return (userWinner.textContent = "ChickenDinner!");
+    }
+      else {  (cpuScore >=5)
+      
+        return (userWinner.textContent = "You SUCK!");
+
+      }
 };
 
 
@@ -157,10 +167,10 @@ resetBtn.addEventListener("click", (evt) => {
 
 
                                 //roundsfunction game()
-const userWin = () => {
+const userDinner = () => {
   if ((uScore = 5)) {
     {
-      return (resultText.textContent = "Match over");
+      return (userWinner.textContent = "Match over");
     }
     window.alert("Hello! I am an alert box!!");
     console.log("Winner einner");
