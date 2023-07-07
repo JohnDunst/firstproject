@@ -1,9 +1,8 @@
-// Need to set values for player and CPU
+                                      // Need to set values for player and CPU
 let uScore = 0;
 let cScore = 0;
-//let cpuChoice="";
-//let userChoice="";
-//start function IE: player click on selection button
+
+                                        //start function const setups
 
 const rockBtn = document.querySelector(".rock");
 const paperBtn = document.querySelector(".paper");
@@ -14,13 +13,15 @@ const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
 const cpuSelection = document.querySelector(".cpuSelection");
 
-/*et cpuChoices =
-random=(Math.floor(Math.random()*3));
-cpuChoice= choiceList[random];*/
 
 function cpuChoices() {
   random = Math.floor(Math.random() * 3);
   return choiceList[random];
+
+
+
+
+
 
 }
 rockBtn.addEventListener("click", (evt) => {
@@ -29,17 +30,24 @@ rockBtn.addEventListener("click", (evt) => {
   console.log(choice);
   var result = winner("rock", choice);
 
-  {return cpuSelection.textContent = `${choice}` ,  (userSelection.textContent = ("rock"));
+  {
+    return (
+      (cpuSelection.textContent = `${choice}`),
+      (userSelection.textContent = "rock")
+    );
   }
 
-  //console.log(winner);
 });
 paperBtn.addEventListener("click", (evt) => {
   console.log("paper");
   let choice = cpuChoices();
   console.log(choice);
   var result = winner("paper", choice);
-  {return cpuSelection.textContent = `${choice}` ,  ( userSelection.textContent = ("paper"))
+  {
+    return (
+      (cpuSelection.textContent = `${choice}`),
+      (userSelection.textContent = "paper")
+    );
   }
 });
 sicssorsBtn.addEventListener("click", (evt) => {
@@ -47,12 +55,17 @@ sicssorsBtn.addEventListener("click", (evt) => {
   let choice = cpuChoices();
   console.log(choice);
   var result = winner("scissors", choice);
-  
-  {return cpuSelection.textContent = `${choice}` ,  (userSelection.textContent = ("scissors"));
+
+  {
+    return (
+      (cpuSelection.textContent = `${choice}`),
+      (userSelection.textContent = "scissors")
+    );
   }
-  
 });
-//cpuSelection.innerHTML= '${.choice}';choice;
+
+
+
 
 //logic of the game similar to my mini project code logic
 const winner = (userChoice, cpuChoice) => {
@@ -116,18 +129,34 @@ const winner = (userChoice, cpuChoice) => {
     }
   }
 };
+
+
+
+
+                   //scorekeeper
 const updateScores = () => {
   const userScore = document.querySelector(".userScore p");
   const cpuScore = document.querySelector(".cpuScore p");
   userScore.textContent = uScore;
   cpuScore.textContent = cScore;
 };
-//reload button
+
+
+
+
+
+
+                  //reload button
 const resetBtn = document.querySelector(".reset");
 resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
-//roundsfunction game()
+
+
+
+
+
+                                //roundsfunction game()
 const userWin = () => {
   if ((uScore = 5)) {
     {
