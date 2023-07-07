@@ -12,7 +12,7 @@ const choiceList = ["rock", "paper", "scissors"];
 userChoice = (rockBtn, paperBtn, sicssorsBtn);
 const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
-var cpuSelection = document.getElementById(".cpuSelection");
+const cpuSelection = document.querySelector(".cpuSelection");
 
 /*et cpuChoices =
 random=(Math.floor(Math.random()*3));
@@ -28,19 +28,18 @@ rockBtn.addEventListener("click", (evt) => {
   let choice = cpuChoices();
   console.log(choice);
   var result = winner("rock", choice);
-  {
-    return (userSelection.textContent = "rock");
+
+  {return cpuSelection.textContent = `${choice}` ,  (userSelection.textContent = ("rock"));
   }
 
-  console.log(winner);
+  //console.log(winner);
 });
 paperBtn.addEventListener("click", (evt) => {
   console.log("paper");
   let choice = cpuChoices();
   console.log(choice);
   var result = winner("paper", choice);
-  {
-    return (userSelection.textContent = "paper");
+  {return cpuSelection.textContent = `${choice}` ,  ( userSelection.textContent = ("paper"))
   }
 });
 sicssorsBtn.addEventListener("click", (evt) => {
@@ -48,9 +47,10 @@ sicssorsBtn.addEventListener("click", (evt) => {
   let choice = cpuChoices();
   console.log(choice);
   var result = winner("scissors", choice);
-  {
-    return (userSelection.textContent = "scissors");
+  
+  {return cpuSelection.textContent = `${choice}` ,  (userSelection.textContent = ("scissors"));
   }
+  
 });
 //cpuSelection.innerHTML= '${.choice}';choice;
 
