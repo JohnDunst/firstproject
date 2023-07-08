@@ -86,7 +86,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CPUWIN");
+          return (resultText.textContent = "CpuWin");
         }
       }
     } else if (userChoice === "paper") {
@@ -103,7 +103,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CPUWIN");
+          return (resultText.textContent = "CpuWin");
         }
       }
     } else if (userChoice === "scissors") {
@@ -120,7 +120,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CPUWIN");
+          return (resultText.textContent = "CpuWin");
         }
       }
     }
