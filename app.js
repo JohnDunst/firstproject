@@ -1,8 +1,8 @@
-                                      // Need to set values for player and CPU
+// Need to set values for player and CPU
 let uScore = 0;
 let cScore = 0;
 
-                                        //start function const setups
+//start function const setups
 
 const rockBtn = document.querySelector(".rock");
 const paperBtn = document.querySelector(".paper");
@@ -12,18 +12,11 @@ userChoice = (rockBtn, paperBtn, sicssorsBtn);
 const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
 const cpuSelection = document.querySelector(".cpuSelection");
-const userWinner= document.querySelector(".chickenDinner");
-
+const userWinner = document.querySelector(".chickenDinner");
 
 function cpuChoices() {
   random = Math.floor(Math.random() * 3);
   return choiceList[random];
-
-
-
-
-
-
 }
 rockBtn.addEventListener("click", (evt) => {
   console.log("rock");
@@ -37,7 +30,6 @@ rockBtn.addEventListener("click", (evt) => {
       (userSelection.textContent = "rock")
     );
   }
-
 });
 paperBtn.addEventListener("click", (evt) => {
   console.log("paper");
@@ -64,9 +56,6 @@ sicssorsBtn.addEventListener("click", (evt) => {
     );
   }
 });
-
-
-
 
 //logic of the game similar to my mini project code logic
 const winner = (userChoice, cpuChoice) => {
@@ -131,49 +120,43 @@ const winner = (userChoice, cpuChoice) => {
   }
 };
 
-
-
-
-                   //scorekeeper
+//scorekeeper
 const updateScores = () => {
   const userScore = document.querySelector(".userScore p");
   const cpuScore = document.querySelector(".cpuScore p");
   userScore.textContent = uScore;
   cpuScore.textContent = cScore;
-  if (uScore >= 5) 
-    {
-      return (userWinner.textContent = "ChickenDinner!");
-    }
-      else {  (cpuScore >=5)
-      
-        return (userWinner.textContent = "You SUCK!");
+  if (uScore >=5) {
+    alert ("Winner Winner Chicken Dinner!");
+      location.reload
 
-      }
+
+  } if 
+    (cScore >=5) {
+
+    alert ("YOU NOOB!");
+    location.reload
 };
 
-
-
-
-
-
-                  //reload button
+//reload button
 const resetBtn = document.querySelector(".reset");
 resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
-
-
-
-
-
-                                //roundsfunction game()
-const userDinner = () => {
-  if ((uScore = 5)) {
-    {
-      return (userWinner.textContent = "Match over");
-    }
-    window.alert("Hello! I am an alert box!!");
-    console.log("Winner einner");
-  }
-};
+}
+if (uScore >= 5) {
+  alert("YOU WIN, CONGRATULATIONS!");
+  document.location.reload();
+  clearInterval(interval);
+}
+//roundsfunction game()
+//const userDinner = () => {
+ // if ((uScore = 5)) {
+   // {
+   //   return (userWinner.textContent = "Match over");
+  //  }
+ ///   window.alert("Hello! I am an alert box!!");
+  //  console.log("Winner einner");
+ // }
+//};
 //resultText.textContent= checkwinner();
