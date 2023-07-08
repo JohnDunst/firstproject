@@ -20,10 +20,21 @@
 .options{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    margin-top: 50px;
+    
 
+}
 
+.rock{
+    font-size: larger;
 
+}
+.paper{
+    font-size: larger;
+}
+.scissors{
+    font-size: larger;
 }
 .scores{
     display: flex;
@@ -43,7 +54,5 @@
 
 .cpuDisplay{
 margin-left: 31%;
-
-
-
 }
+
