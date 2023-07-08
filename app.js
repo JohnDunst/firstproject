@@ -144,11 +144,11 @@ resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
 }
-if (uScore >= 5) {
-  alert("YOU WIN, CONGRATULATIONS!");
-  document.location.reload();
-  clearInterval(interval);
-}
+//if (uScore >= 5) {
+  //alert("YOU WIN, CONGRATULATIONS!");
+  //document.location.reload();
+  //clearInterval(interval);
+//}
 //roundsfunction game()
 //const userDinner = () => {
  // if ((uScore = 5)) {
