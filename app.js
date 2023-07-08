@@ -1,9 +1,8 @@
-// Need to set values for player and CPU
+                                            // Need to set values for player and CPU
 let uScore = 0;
 let cScore = 0;
 
-//start function const setups
-
+                                            // Query selectors
 const rockBtn = document.querySelector(".rock");
 const paperBtn = document.querySelector(".paper");
 const sicssorsBtn = document.querySelector(".scissors");
@@ -14,10 +13,16 @@ const userSelection = document.querySelector(".userSelection");
 const cpuSelection = document.querySelector(".cpuSelection");
 const userWinner = document.querySelector(".chickenDinner");
 
+
+                                            // CPU RNG
+
 function cpuChoices() {
   random = Math.floor(Math.random() * 3);
   return choiceList[random];
 }
+
+
+                                            // Buttons and clicks
 rockBtn.addEventListener("click", (evt) => {
   console.log("rock");
   let choice = cpuChoices();
@@ -57,7 +62,9 @@ sicssorsBtn.addEventListener("click", (evt) => {
   }
 });
 
-//logic of the game similar to my mini project code logic
+
+
+                                          //logic of the game Win functions
 const winner = (userChoice, cpuChoice) => {
   if (userChoice === cpuChoice) {
     console.log("tie");
@@ -120,7 +127,12 @@ const winner = (userChoice, cpuChoice) => {
   }
 };
 
-//scorekeeper
+
+
+
+
+
+                                                //scorekeeper
 const updateScores = () => {
   const userScore = document.querySelector(".userScore p");
   const cpuScore = document.querySelector(".cpuScore p");
@@ -138,12 +150,16 @@ const updateScores = () => {
     location.reload
 };
 
-//reload button
+                                              //reload button
 const resetBtn = document.querySelector(".reset");
 resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
 }
+
+
+
+                                              // failed ideas
 //if (uScore >= 5) {
   //alert("YOU WIN, CONGRATULATIONS!");
   //document.location.reload();
