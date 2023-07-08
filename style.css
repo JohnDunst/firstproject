@@ -3,7 +3,7 @@
    body {background-color: black;}
 
 .gameWinner{
-    border: solid gray;
+   /* border: solid gray;*/
     width: 120px;
     height: 100px;
     margin-left: 44%;
@@ -43,8 +43,8 @@
     margin-top: 60px;
     width: 50%;
     height: 150px;
-    border: solid yellow;
-    color: aqua;}
+   /* border: solid yellow;*/
+    color: white;}
 
 
 .gameWinner{
