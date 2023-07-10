@@ -78,7 +78,7 @@ const winner = (userChoice, cpuChoice) => {
         uScore++;
         updateScores();
         {
-          return (resultText.textContent = "UserWin!");
+          return (resultText.textContent = "User Win!");
         }
       } else {
         //cpuChoice === "paper";
@@ -86,7 +86,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CpuWin");
+          return (resultText.textContent = "Cpu Win!");
         }
       }
     } else if (userChoice === "paper") {
@@ -95,7 +95,7 @@ const winner = (userChoice, cpuChoice) => {
         uScore++;
         updateScores();
         {
-          return (resultText.textContent = "UserWin!");
+          return (resultText.textContent = "User Win!");
         }
       } else {
         //cpuChoice == "scissors";
@@ -103,7 +103,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CpuWin");
+          return (resultText.textContent = "Cpu Win!");
         }
       }
     } else if (userChoice === "scissors") {
@@ -112,7 +112,7 @@ const winner = (userChoice, cpuChoice) => {
         uScore++;
         updateScores();
         {
-          return (resultText.textContent = "UserWin!");
+          return (resultText.textContent = "User Win!");
         }
       } else {
         //cpuChoice == "rock";
@@ -120,7 +120,7 @@ const winner = (userChoice, cpuChoice) => {
         cScore++;
         updateScores();
         {
-          return (resultText.textContent = "CpuWin");
+          return (resultText.textContent = "Cpu Win!");
         }
       }
     }
@@ -140,14 +140,14 @@ const updateScores = () => {
   cpuScore.textContent = cScore;
   if (uScore >=5) {
     alert ("Winner Winner Chicken Dinner!");
-      location.reload
+      location.reload();
 
 
   } if 
     (cScore >=5) {
 
     alert ("YOU NOOB!");
-    location.reload
+    location.reload();
 };
 
                                               //reload button
