@@ -2,13 +2,16 @@
 let uScore = 0;
 let cScore = 0;
 window.onload = 
-  alert("BEST OF FIVE")
+  alert("Best of Seven Series")
 
                                             // Query selectors
 const rockBtn = document.querySelector(".rock");
 const paperBtn = document.querySelector(".paper");
 const sicssorsBtn = document.querySelector(".scissors");
 const choiceList = ["rock", "paper", "scissors"];
+const resetBtn = document.querySelector(".reset");
+
+
 userChoice = (rockBtn, paperBtn, sicssorsBtn);
 const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
@@ -63,7 +66,9 @@ sicssorsBtn.addEventListener("click", (evt) => {
     );
   }
 });
-
+resetBtn.addEventListener("click", (evt) => {
+  location.reload();
+});
 
 
                                           //logic of the game Win functions
@@ -140,24 +145,20 @@ const updateScores = () => {
   const cpuScore = document.querySelector(".cpuScore p");
   userScore.textContent = uScore;
   cpuScore.textContent = cScore;
-  if (uScore >=3) {
+  if (uScore >=4) {
     alert ("Winner Winner Chicken Dinner!");
       location.reload();
 
   } 
   
   if 
-    (cScore >=3) {
+    (cScore >=4) {
 
-    alert ("YOU NOOB!");
+    alert ("NOOB");
     location.reload();
 }}
 
                                               //reload button
-const resetBtn = document.querySelector(".reset");
-resetBtn.addEventListener("click", (evt) => {
-  location.reload();
-});
 
 
 
