@@ -1,6 +1,8 @@
                                             // Need to set values for player and CPU
 let uScore = 0;
 let cScore = 0;
+window.onload = 
+  alert("BEST OF FIVE")
 
                                             // Query selectors
 const rockBtn = document.querySelector(".rock");
@@ -156,6 +158,8 @@ const resetBtn = document.querySelector(".reset");
 resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
+
+
 
 
 

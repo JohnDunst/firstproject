@@ -4,15 +4,15 @@
 
 .gameWinner{
    /* border: solid gray;*/
-    width: 190px;
+    width: 250px;
     height: 100px;
-    margin-left: 250px;
-    font-size: large;
+    margin-left: 200px;
+    font-size: small;
     color: white;
 
 }
 #resultText{
-    margin-left: 50%;
+    margin-left: 0%;
 
 
 }
@@ -52,7 +52,7 @@
 }
 
 .cpuDisplay{
-margin-left: 17%;
+margin-left: 19%;
 
 }
 
