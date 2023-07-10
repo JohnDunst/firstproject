@@ -31,7 +31,7 @@ rockBtn.addEventListener("click", (evt) => {
 
   {
     return (
-      (cpuSelection.textContent = `${choice}`),
+      (cpuSelection.textContent = choice),
       (userSelection.textContent = "rock")
     );
   }
@@ -43,7 +43,7 @@ paperBtn.addEventListener("click", (evt) => {
   var result = winner("paper", choice);
   {
     return (
-      (cpuSelection.textContent = `${choice}`),
+      (cpuSelection.textContent = choice),
       (userSelection.textContent = "paper")
     );
   }
@@ -56,7 +56,7 @@ sicssorsBtn.addEventListener("click", (evt) => {
 
   {
     return (
-      (cpuSelection.textContent = `${choice}`),
+      (cpuSelection.textContent = choice),
       (userSelection.textContent = "scissors")
     );
   }
@@ -143,7 +143,9 @@ const updateScores = () => {
       location.reload();
 
 
-  } if 
+  } 
+  
+  if 
     (cScore >=5) {
 
     alert ("YOU NOOB!");
