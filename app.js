@@ -11,7 +11,7 @@ userChoice = (rockBtn, paperBtn, sicssorsBtn);
 const resultText = document.querySelector(".resultText");
 const userSelection = document.querySelector(".userSelection");
 const cpuSelection = document.querySelector(".cpuSelection");
-const userWinner = document.querySelector(".chickenDinner");
+//const userWinner = document.querySelector(".chickenDinner");
 
 
                                             // CPU RNG
@@ -132,32 +132,30 @@ const winner = (userChoice, cpuChoice) => {
 
 
 
-                                                //scorekeeper
+                                          //scorekeeper
 const updateScores = () => {
   const userScore = document.querySelector(".userScore p");
   const cpuScore = document.querySelector(".cpuScore p");
   userScore.textContent = uScore;
   cpuScore.textContent = cScore;
-  if (uScore >=5) {
+  if (uScore >=3) {
     alert ("Winner Winner Chicken Dinner!");
       location.reload();
-
 
   } 
   
   if 
-    (cScore >=5) {
+    (cScore >=3) {
 
     alert ("YOU NOOB!");
     location.reload();
-};
+}}
 
                                               //reload button
 const resetBtn = document.querySelector(".reset");
 resetBtn.addEventListener("click", (evt) => {
   location.reload();
 });
-}
 
 
 

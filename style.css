@@ -4,12 +4,11 @@
 
 .gameWinner{
    /* border: solid gray;*/
-    width: 120px;
+    width: 190px;
     height: 100px;
-    margin-left: 45%;
+    margin-left: 250px;
     font-size: large;
     color: white;
-    text-align: center;
 
 }
 #resultText{
@@ -39,7 +38,7 @@
 .scores{
     display: flex;
     justify-content: space-around;
-    margin-left: 0px;
+    margin-left: 80px;
     margin-top: 60px;
     width: 80%;
     height: 150px;
@@ -53,7 +52,11 @@
 }
 
 .cpuDisplay{
-margin-left: 22%;
+margin-left: 17%;
 
 }
 
+.resetButton{
+
+    margin-top: 90px;
+}
